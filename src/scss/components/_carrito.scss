@@ -1,0 +1,19 @@
+@import "../base/mixins";
+.titulocarrito{
+    @include titulos-principales(40px,100px);
+    @include titulos-principales-m(40px,13px);
+}
+.iconomedio{
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+.textoindex{ 
+    @include pad (0,0,100px,0);
+}
+.cartel-carrito{
+    @include pad (50px,0, 50px, 0);
+}
+.cartel-metodopago{
+    @include pad (0, 0 ,50px ,0)
+}

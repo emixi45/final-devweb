@@ -1,0 +1,326 @@
+
+*{
+    /* margen */
+    margin: 0;
+    /* relleno */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* inicio letras  */
+
+@font-face {
+    font-family: 'letraMenu';
+    src: url('../fonts/menu/BebasNeue-Regular.ttf') format('truetype');
+    display: swap;
+}
+
+@font-face {
+    font-family: 'lorem';
+    src: url('../fonts/Quicksand-parrafo/Quicksand-VariableFont_wght.ttf') format('truetype');
+    display: swap;
+}
+
+@font-face {
+    font-family: 'titulos';
+    src: url('../fonts/Anton-titulos/Anton-Regular.ttf') format('truetype');
+    display: swap;
+}
+
+/****************************** fin letras */
+
+
+body{
+    background-color: antiquewhite;
+}
+/******************************* inicio header */
+.header{
+    background-color: rgba(172, 148, 98);
+}
+
+.navegacion{
+    background-color: rgb(173, 140, 87);
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+.carro{
+    margin:auto;
+    width: 300px;
+    padding-bottom: 40px;
+}
+.principal{
+    padding-bottom: 50px;
+}
+
+.colornav{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    padding:0 20px 5px 40px;
+    font-family: 'letraMenu';
+    font-size: 20px;
+}
+
+
+/******************************* fin header */
+
+/******************************* sections */
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-family:'letraMenu';
+}
+
+.titulos{
+    font-family: 'titulos';
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 50px;
+}
+
+
+.productoimg{
+    display: flex;
+    justify-content: center;
+}
+
+
+.textoindex{
+    text-align: center;
+    padding: 0 0 2rem 0 ;
+    font-family: 'lorem';
+}
+/******************************* sections */
+
+
+/******************************* formularios , botones o contactos */
+.img{
+    width: 400px;
+    height: 300px;
+}
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.iconomedio{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.local{
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* formulario */
+.formulario{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.campos{
+    text-align: center;
+    padding-bottom: 10px ;
+    padding-top: 10px;
+
+}
+
+.cartas{
+    margin: 10px 15px 0 15px;
+}
+
+.botones{
+    background-color: rgb(7, 74, 100);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+}
+
+.boton-item{
+    display: flex;
+}
+
+
+/******************************* fin formularios , botones o contactos */
+
+/******************************* inicio footer */
+
+.footer{
+    background-color: rgba(172, 148, 98);
+    padding: 16px;
+}
+
+.navfooter{
+    text-align: start;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    z-index: 2;
+    font-family: 'letraMenu';
+
+}
+/* mobile */
+.header-mobile{
+    display: none;
+}
+/******************************* fin footer */
+/* responsive */
+
+ @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+    .navbar,
+    .navbar-light{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .colornav-header{
+        margin-left: 20px;
+        background-color: rgb(66, 55, 30);
+        border-radius: 13%;
+    }
+    .titulo-header{
+        color: black;
+        display: flex;
+        justify-content: center; 
+        text-decoration: none;
+        font-family: 'letraMenu';
+    }
+    .titulos{
+        font-family: 'titulos';
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family:'letraMenu';
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 50px;
+    }
+    .cartas{
+        flex-direction: column;
+    }
+    .botones{
+        background-color: rgb(7, 74, 100);
+        padding: 10px 10px 10px 10px;
+    }
+    .dropdown-menu {
+    z-index: 1000;
+    display: none;
+    color: #212529;
+    list-style: none;
+    background-color: rgb(66, 55, 30);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    }
+    .nav-h{
+        padding-left: 0;
+        display: flex;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    
+    .colornav2{
+        display: flex;
+        justify-content: end;
+        color: rgb(5, 5, 5);
+        text-decoration: none;
+        font-family: 'letraMenu';
+        font-size: 14px;
+        background-color: rgb(66, 55, 30);
+        
+    }
+    .boton-item{
+        flex-direction:column;
+        border-radius:none;
+    }
+    .img-producto{
+        max-height: 200px;
+    }
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    .formulario{
+        padding-bottom: 50px;
+    }
+    .articulo-m{
+        padding-bottom: 40px;
+    }
+    .footer{
+        display: none;
+    }
+ }
+ /* samsung fold */
+ @media only screen and (max-width: 280px) and (orientation:portrait){
+    .header-mobile{
+        display: none;
+    }
+    .img-producto{
+        width: 200px;
+        height: 200px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    
+ }
+
+/* tablet / ipad */
+@media only screen and (max-width: 480px) and (orientation:landscape){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .cartas{
+        flex-direction: row;
+    }
+    .img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+
+@media only screen and (min-width:540px) and (max-width:1024px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .cartas{
+        flex-direction: row;
+    }
+    .img-producto{
+        max-height: 350px;
+    }
+    .img{
+        width: 250px;
+        height: 300px
+    }
+}

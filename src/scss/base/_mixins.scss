@@ -1,0 +1,44 @@
+@mixin d-center {
+    display: flex;
+    justify-content: center; 
+}
+
+@mixin d-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@mixin d-grid-m {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+@mixin titulos-principales($size, $padding-top) {
+    font-size: $size;
+    padding-top: $padding-top;
+    text-align: center;
+    font-family: 'letraMenu';
+}
+
+@mixin titulo-header($size, $padding-top) {
+    font-size: $size;
+    padding-top: $padding-top;
+}
+    
+@mixin titulos-principales-m ($size-m,$padding-top-m) {
+    @media only screen and (max-width: 480px) and (orientation:portrait) {
+    font-size: $size-m;
+    padding-top: $padding-top-m;
+    }
+}
+
+@mixin pad ($top ,$left ,$bottom ,$right){
+    padding: $top $left $bottom $right;
+}
+
+@mixin items{
+    text-decoration: none;
+        color :nth($colores,2);
+        font-size: 20px;
+        font-family: 'titulos';
+}

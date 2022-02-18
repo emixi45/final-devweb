@@ -1,0 +1,32 @@
+@import '../base/mixins';
+.titulonosotros{
+    @include titulos-principales(40px,20px);
+    @include titulos-principales-m(40px,20px);
+}
+.cartas{
+        margin: 50px 15px 0 15px;
+        @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+                flex-direction: column;
+        }
+        @media only screen and (max-width: 480px) and (orientation:landscape){
+
+            .cartas{
+                flex-direction: row;
+            }
+        }
+        @media only screen and (min-width:540px) and (max-width:1024px){
+            .cartas{
+                flex-direction: row;
+            }
+            // tablet
+        }
+    
+    .local{
+        padding-top: 20px;
+        @include d-center;
+        padding-bottom: 80px;
+        
+    }
+}
+
+    

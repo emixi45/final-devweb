@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'letraMenu';
+    src: url('../fonts/menu/BebasNeue-Regular.ttf') format('truetype');
+    display: swap;
+}
+
+@font-face {
+    font-family: 'lorem';
+    src: url('../fonts/Quicksand-parrafo/Quicksand-VariableFont_wght.ttf') format('truetype');
+    display: swap;
+}
+
+@font-face {
+    font-family: 'titulos';
+    src: url('../fonts/Anton-titulos/Anton-Regular.ttf') format('truetype');
+    display: swap;
+}
+
+@import 'base/general';
+@import 'components/header';
+@import 'components/footer';
+@import 'base/colors';
+@import 'components/index';
+@import 'components/productos';
+@import 'components/articulo';
+@import 'components/contacto';
+@import 'components/nosotros';
+@import 'components/carrito';
+@import 'base/mixins';
+            
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

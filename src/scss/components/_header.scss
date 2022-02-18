@@ -1,0 +1,56 @@
+
+@import '../base/mixins';
+
+.header{
+    @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+        .navbar, 
+        .navbar-light{
+        display: none;
+        }
+    }
+    
+    .colornav{
+        text-decoration: none;
+        padding:0 20px 5px 40px;
+        font-family: 'letraMenu';
+        font-size: 20px;
+        @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+            margin-left: 20px;
+            border-radius: 13%;
+        }
+        
+    }
+    
+
+    .nav-h{
+    display: none;
+    list-style: none;
+    @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+                @include d-center;
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+                .colornav2{
+                    text-decoration: none;
+                    @include d-center;
+                    text-decoration: none;
+                    font-family: 'letraMenu';
+                    font-size: 14px;
+                }
+                .colornav-header{
+                    margin-left: 20px;
+                    border-radius: 13%;
+                }
+                .titulo-header{
+                    @include d-center; 
+                    text-decoration: none;
+                    font-family: 'letraMenu';
+                }
+                
+            }
+            
+    } 
+}
+.tituloheader{
+    @include titulos-principales(40px,20px);
+}

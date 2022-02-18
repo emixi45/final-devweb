@@ -1,0 +1,20 @@
+@import '../base/mixins';
+.titulocontacto{
+    @include titulos-principales(40px,100px);
+    @include titulos-principales-m(40px,13px);
+}
+.formulario{
+    
+    @include d-center;
+    @include pad (0 ,0 ,20px ,0);
+    @media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+            @include  pad (0,0,20px,0);
+        }
+    
+    .campos{
+        text-align: center;
+        @include pad (10px,0,20px,0);
+    
+    }
+}
+

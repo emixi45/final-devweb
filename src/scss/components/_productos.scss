@@ -1,0 +1,124 @@
+@import '../base/mixins';
+@import '../base/colors';
+.tituloproducto{
+    @include titulos-principales(40px,100px);
+    @include titulos-principales-m(40px,20px);
+}
+.contenedor-img{
+    @include d-center;
+    padding-top: 50px;
+    
+    .img{
+        width: 400px;
+        height: 350px;
+        
+        @media only screen and (max-width: 480px) and (orientation:portrait) {
+            width: 300px;
+            height: 300px;
+        }
+        
+        @media only screen and (min-width:481px) and (max-width:1236px){
+            width: 600px;
+            height: 600px; 
+        }
+        @media only screen and (min-width:481px) and (max-width:540px){
+            width: 400px;
+            height: 400px; 
+        }
+    }
+    .img:hover{
+        box-shadow: 8px 12px 5px -6px rgba(0,0,0,0.46);
+        -webkit-box-shadow: 8px 12px 5px -6px rgba(0,0,0,0.46);
+        -moz-box-shadow: 8px 12px 5px -6px rgba(0,0,0,0.46);
+        transform: scale(0.9);
+        transition-duration: 2s;
+        filter: brightness(50%);
+        
+    }
+    .item1:hover::after{
+        content: 'Espejo';
+        @include d-center;
+        @include items;
+        
+        
+    }
+    .item2:hover::after{
+        content: 'Almohadon-pastilla';
+        @include d-center;
+        @include items;
+        
+    }
+    .item3:hover::after{
+        content: 'Almohadon';
+        @include d-center;
+        @include items;
+    }
+    .item4:hover::after{
+        content: 'Copa-tragos';
+        @include d-center;
+        @include items;
+    }
+    .item5:hover::after{
+        content: 'Plantitas';
+        @include d-center;
+        @include items;
+    }
+    .item6:hover::after{
+        content: 'Set-mates';
+        @include d-center;
+        @include items;
+    }
+    .item7:hover::after{
+        content: 'Buda';
+        @include d-center;
+        @include items;
+    }
+    .item8:hover::after{
+        content: 'Canasto';
+        @include d-center;
+        @include items;
+    }
+    .item9:hover::after{
+        content: 'Mini-maceta-animal';
+        @include items;
+        @include d-center;
+    }
+    .item10:hover::after{
+        content: 'Mini-macetas';
+        @include items;
+        @include d-center;
+    }
+    .item11:hover::after{
+        content: 'Reloj-engrane';
+        @include items;
+        @include d-center;
+    }
+    .item12:hover::after{
+        content: 'individual';
+        @include items;
+        @include d-center;
+    }
+    .item13:hover::after{
+        content: 'Alfombra';
+        @include items;
+        @include d-center;
+    }
+    
+    .grid{
+        @include d-grid;
+        column-gap: 20px;
+        row-gap: 50px;
+        padding-bottom: 20px;
+        @media only screen and (max-width: 480px)  and (orientation:portrait) {
+            @include d-grid-m;
+            padding-bottom: 60px;
+        }
+        
+        @media only screen and (min-width:481px) and (max-width:1236px){
+            @include d-grid-m;
+        }
+    }
+    
+}
+
+

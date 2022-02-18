@@ -1,0 +1,36 @@
+
+$colores:
+#EBD8D0,/*background body*/
+#ac9462, /*background nav*/
+#d5b87f,/*nav secction*/
+#0d6efd, /*botones*/
+#000;
+
+
+body{
+    background-color: nth($colores,1);
+}
+
+.footer,
+.colornav,
+.header{
+    background-color: nth($colores,2);
+}
+
+.colornav-header,
+.colornav2,
+.titulo-header{
+ background-color: nth($colores,3);
+}
+
+@media only screen and (max-width: 480px) and (min-width: 281px) and (orientation:portrait) {
+    .colornav2,
+    .dropdown-menu{
+        background-color: nth($colores,2);
+    }
+}
+.colornav2,
+.titulo-header,
+.navfooter{
+    color:nth($colores,5)
+}
